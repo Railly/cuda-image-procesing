@@ -18,7 +18,7 @@ int main()
     * utils::applyFilter(N, gaussian::filter, h_input, h_output, width, height);
     * where N is the number of times we want to apply the filter.
     */
-  gaussian::filter(h_input, h_output, width, height);
+  utils::applyFilter(5, gaussian::filter, h_input, h_output, width, height);
   utils::write_ASCII_PGM("lena_gaussian.ascii.pgm", h_output, width, height);
   printf("Gaussian Filter Done\n");
 
